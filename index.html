@@ -19,13 +19,13 @@
                 <nav class="header__menu menu">
                     <ul class="menu__list">
                         <li class="menu__item">
-                            <a href="#" class="menu__link">Home</a>
+                            <a data-goto=".main" href="#" class="menu__link">Home</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">About Me</a>
+                            <a data-goto=".about" href="#" class="menu__link">About Me</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">Contact</a>
+                            <a data-goto=".contacts" href="#" class="menu__link">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -98,19 +98,52 @@
                     </div>
                 </div>
             </section>
+            <section class="page__contacts contacts">
+                <div class="contacts__container">
+                    <div class="contacts__content">
+                        <h2 class="contacts__title title">
+                            Got a project in <span>mind?</span>
+                        </h2>
+                        <div class="contacts__image">
+                            <img src="img/contacts/img.svg" alt="Image">
+                        </div>
+                    </div>
+                    <form action="#" class="contacts__form form">
+                        <div class="form__item">
+                            <label for="i-1" class="form__label">Your name</label>
+                            <input required id="i-1" type="text" class="form__input" placeholder="Name" name="name">
+                        </div>
+                        <div class="form__item">
+                            <label for="i-2" class="form__label">Your email</label>
+                            <input required id="i-2" type="email" class="form__input" placeholder="Email" name="email">
+                        </div>
+                        <div class="form__item">
+                            <label for="i-3" class="form__label">Your Message</label>
+                            <textarea id="i-3" class="form__input" placeholder="Message" name="message"></textarea>
+                        </div>
+                        <div class="form__item">
+                            <button type="submit" class="form__button button">
+                                <span>Send Message</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
         </main>
         <footer class="footer">
             <div class="footer__container">
                 <nav class="footer__menu menu-footer">
                     <ul class="menu-footer__list">
                         <li class="menu-footer__item">
-                            <a href="#" class="menu-footer__link menu-footer__link_home">Home</a>
+                            <a data-goto=".main" href="#" class="menu-footer__link menu-footer__link_home">Home</a>
                         </li>
                         <li class="menu-footer__item">
-                            <a href="#" class="menu-footer__link menu-footer__link_about">About me</a>
+                            <a data-goto=".about" href="#" class="menu-footer__link menu-footer__link_about">About
+                                me</a>
                         </li>
                         <li class="menu-footer__item">
-                            <a href="#" class="menu-footer__link menu-footer__link_contacts">Contact</a>
+                            <a data-goto=".contacts" href="#"
+                                class="menu-footer__link menu-footer__link_contacts">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -131,6 +164,7 @@
             </div>
         </footer>
     </div>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
